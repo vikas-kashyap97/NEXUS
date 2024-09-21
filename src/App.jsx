@@ -19,7 +19,7 @@ function App() {
         <main className="flex-grow">
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              <Route path="/Home" element={<Hero />} />
+              <Route path="/" element={<Hero />} />
               <Route path="/vision" element={<Vision />} />
               <Route path="/connect" element={<Connect />} />
               <Route path="/testimonials" element={<Testimonials />} />
