@@ -9,7 +9,10 @@ function Footer() {
             <div>
               <h3 className="text-xl font-semibold mb-4">Access Points</h3>
               <ul className="space-y-2">
-                {['Home', 'Vision', 'Connect', 'Testimonials'].map((item) => (
+                <li>
+                  <Link to="/" className="hover:text-green-400 transition-colors duration-200">Home</Link>
+                </li>
+                {['Vision', 'Connect', 'Testimonials'].map((item) => (
                   <li key={item}>
                     <Link to={`/${item.toLowerCase()}`} className="hover:text-green-400 transition-colors duration-200">{item}</Link>
                   </li>
