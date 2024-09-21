@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import Vision from './components/Vision';
 import Connect from './components/Connect';
 import Testimonials from './components/Testimonials';
-import customCursor from '/cursor.png'; // Your custom cursor file path
+import customCursor from '/cursor.png';
 function App() {
   return (
     <Router>
