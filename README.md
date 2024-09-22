@@ -18,8 +18,6 @@ Nexus is a simple Vite app that showcases smooth background animations using **A
 - **Styling**: Tailwind CSS
 - **Animations**: Anime.js, Framer Motion
 
-## Live Demo
-Check it out here: [https://nexus-cwv.netlify.app/]
 
 ## Installation
 To run this project locally, follow these steps:
