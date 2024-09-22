@@ -1,5 +1,5 @@
 # Live Link 
-Link[https://nexus-cwv.netlify.app/]
+[Link](https://nexus-cwv.netlify.app/)
 
 # Nexus - Animated Background App
 
@@ -40,4 +40,10 @@ To run this project locally, follow these steps:
    ```bash
    npm run dev
 
+# License
+Licensed under the [MIT license](https://github.com/vikas-kashyap97/NEXUS/blob/main/LICENSE.md).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+# Fun Fact
+**Lines of code**: 4583 😆😆😆😆😆
    
