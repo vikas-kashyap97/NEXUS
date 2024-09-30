@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Vision from './components/Vision';
 import Connect from './components/Connect';
-import Testimonials from './components/Testimonials';
+import QandA from './components/QandA';
 import customCursor from '/cursor.png';
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
               <Route path="/" element={<Hero />} />
               <Route path="/vision" element={<Vision />} />
               <Route path="/connect" element={<Connect />} />
-              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/QandA" element={<QandA />} />
             </Routes>
           </Suspense>
         </main>

@@ -62,9 +62,9 @@ function Header() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <Link to="/testimonials" className="relative overflow-hidden group">
+                <Link to="/QandA" className="relative overflow-hidden group">
                   <span className="relative z-10 transition-colors duration-300 group-hover:px-2 group-hover:py-2 group-hover:text-black">
-                    Testimonials
+                    QandA
                   </span>
                   <span className="absolute inset-0 bg-green-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </Link>

@@ -12,7 +12,7 @@ function Footer() {
                 <li>
                   <Link to="/" className="hover:text-green-400 transition-colors duration-200">Home</Link>
                 </li>
-                {['Vision', 'Connect', 'Testimonials'].map((item) => (
+                {['Vision', 'Connect', 'QandA'].map((item) => (
                   <li key={item}>
                     <Link to={`/${item.toLowerCase()}`} className="hover:text-green-400 transition-colors duration-200">{item}</Link>
                   </li>
