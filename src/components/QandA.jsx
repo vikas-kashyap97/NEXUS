@@ -27,7 +27,7 @@ const QASection = () => {
     <div className="min-h-screen bg-black text-green-500 font-mono overflow-hidden">
       <MatrixRain />
       <div className="relative z-10">
-        <section className="container mx-auto mt-20 relative">
+        <section className="container mx-auto mt-10 md:mt-20 relative px-4">
           <AnimatePresence>
             {isLoaded && (
               <motion.div
@@ -36,14 +36,14 @@ const QASection = () => {
                 exit={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.9 }}
               >
-                <h2 className="text-6xl font-bold mb-12 text-center">Questions and Answers</h2>
+                <h2 className="text-4xl md:text-6xl font-bold mb-8 text-center">Questions and Answers</h2>
 
                 {/* Category Filter */}
-                <div className="flex justify-center mb-8">
+                <div className="flex flex-wrap justify-center mb-8">
                   {categories.map((category) => (
                     <button
                       key={category}
-                      className={`mx-2 px-4 py-2 rounded-lg ${selectedCategory === category ? 'bg-green-500 text-black'  : 'bg-gray-800 text-green-500'}`}
+                      className={`mx-2 my-1 px-4 py-2 rounded-lg ${selectedCategory === category ? 'bg-green-500 text-black' : 'bg-gray-800 text-green-500'} transition duration-300`}
                       onClick={() => setSelectedCategory(category)}
                     >
                       {category}
@@ -52,7 +52,7 @@ const QASection = () => {
                 </div>
 
                 {/* Q&A List */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {filteredQuestions.map((qa) => (
                     <motion.div
                       key={qa.id}
@@ -61,8 +61,8 @@ const QASection = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <h4 className="text-2xl font-semibold mb-4">{qa.question}</h4>
-                      <p className="text-lg">{qa.answer}</p>
+                      <h4 className="text-xl md:text-2xl font-semibold mb-4">{qa.question}</h4>
+                      <p className="text-base md:text-lg">{qa.answer}</p>
                     </motion.div>
                   ))}
                 </div>
